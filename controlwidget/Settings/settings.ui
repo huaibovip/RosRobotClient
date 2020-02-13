@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="WiFiBox">
+     <property name="title">
+      <string>ROBOT WIFI SETTINGS</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_8">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>SWITCH ROBOT TO HOTSPOT MODE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QComboBox" name="comboBox">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="4">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>CONNECT ROBOT TO WI-FI</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_7">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Current selected robot IP :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="RaspberryBox">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>RASPBERRY PI SETTINGS</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="JoystickBox">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>JOYSTICK</string>
+     </property>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>92</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Disabled</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="SoftwareBox">
+     <property name="title">
+      <string>SOFTWARE VERSIONS</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Connect to the robot to get current version</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Zero Rbot Studio :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Zero Stepper firmware :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Lastest available version :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Raspberry Pi 3 image :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Current version</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

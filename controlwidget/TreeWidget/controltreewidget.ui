@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlTreeWidget</class>
+ <widget class="QWidget" name="ControlTreeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>192</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTreeWidget" name="treeWidgetMenu">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>GamePad</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_gamepad_blue.png</normaloff>:/icons/icon_gamepad_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Blockly</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_blocks_blue.png</normaloff>:/icons/icon_blocks_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Direction</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_direction_blue.png</normaloff>:/icons/icon_direction_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sequences</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_sequences_blue.png</normaloff>:/icons/icon_sequences_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_settings_blue.png</normaloff>:/icons/icon_settings_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Calibration</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_calibration_blue.png</normaloff>:/icons/icon_calibration_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Status</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_hw_status_blue.png</normaloff>:/icons/icon_hw_status_blue.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Debug</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../Resource/Resource.qrc">
+        <normaloff>:/icons/icon_debug_blue.png</normaloff>:/icons/icon_debug_blue.png</iconset>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Resource/Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

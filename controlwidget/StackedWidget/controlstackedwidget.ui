@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlStackedWidget</class>
+ <widget class="QWidget" name="ControlStackedWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>60</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidgetControl">
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="GamePad" name="pageGamePad"/>
+     <widget class="Blockly" name="pageBlockly"/>
+     <widget class="Direction" name="pageDirection"/>
+     <widget class="Sequences" name="pageSequences"/>
+     <widget class="Settings" name="pageSettings"/>
+     <widget class="Calibration" name="pageCalibration"/>
+     <widget class="Status" name="pageStatus"/>
+     <widget class="Debug" name="pageDebug"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GamePad</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/GamePad/gamepad.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Settings</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Settings/settings.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Status</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Status/status.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Blockly</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Blockly/blockly.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Debug</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Debug/debug.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Calibration</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Calibration/calibration.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Direction</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Direction/direction.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Sequences</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget//Sequences/sequences.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

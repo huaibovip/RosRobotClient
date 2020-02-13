@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Zero Robot</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resource/Resource.qrc">
+    <normaloff>:/image/robot.png</normaloff>:/image/robot.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="MainTitleBar" name="widgetTitle" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="ControlTreeWidget" name="treeWidgetMenu" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ControlStackedWidget" name="stackedWidget" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="infoWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="ModelView" name="webView" native="true"/>
+         </item>
+         <item>
+          <widget class="Information" name="InfoView" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Information</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/Information/information.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MainTitleBar</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/titlebar/maintitlebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ControlTreeWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/TreeWidget/controltreewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ControlStackedWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/StackedWidget/controlstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModelView</class>
+   <extends>QWidget</extends>
+   <header location="global">controlwidget/ModelView/modelview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resource/Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
